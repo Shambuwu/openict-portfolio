@@ -5,7 +5,7 @@ interface Props {
 
 }
 export default function About(props: Props) {
-    let names = ["Kevin de Graaf", "Geert Perton", "Berend Korendijk", "Tom Reezigt"]
+    let names = ["Kevin de Graaf", "Geert Perton", "Berend Korendijk", "Tom Reezigt", "Bastiaan Meijer"]
 
     return (
         <Grid container spacing={3} sx={{paddingLeft: "10px", paddingRight: "10px"}}>
@@ -40,8 +40,9 @@ export default function About(props: Props) {
                 <Typography variant="body1" color="text.secondary">
                     Na de kennismaking met mijn medestudenten werd ik toegewezen aan een tijdelijk project.
                     Hier leerde ik mijn projectgenoten voor de rest van het semester kennen.&nbsp;
-                    <Link href={"https://github.com/Shambuwu/openict-portfolio/blob/e81af48c5625156ca7c4021370663da80108f0b4/src/components/About.tsx#L45"}>Op alfabetische volgorde:&nbsp;</Link>
-                    {names.sort().map((x, index) => index !== names.length-2 ? index !== names.length-1 ? `${x}, `: ` en ${x}` : `${x}`)}.
+                    <Link href={"https://github.com/Shambuwu/openict-portfolio/blob/92846ce5e2d307ca32242075797087f1355972e2/src/components/About.tsx#L44"}>Op alfabetische volgorde:</Link>
+                    &nbsp;{names.sort().map((x, index) => index !== names.length-2 ? index !== names.length-1 ? `${x}, `: ` en ${x}` : `${x}`)}.
+                    {/* Ik ben zo cool, ik weet het... Ik hoop dat iemand dit leest :^( */}
                 </Typography>
             </Grid>
             <Grid item xs={7}>
