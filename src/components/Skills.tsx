@@ -28,7 +28,9 @@ const cardTheme = {
     textAlign: "left", 
     width: "80%", 
     marginLeft: "auto", 
-    marginRight: "auto"
+    marginRight: "auto",
+    paddingTop: "20px",
+    boxShadow: 3
 }
 
 interface Props {
@@ -54,7 +56,7 @@ export default function Skills(props: Props) {
                         component={"img"}
                         alt={"Docker Image"}
                         height={140}
-                        image={"https://thepracticaldev.s3.amazonaws.com/i/m4o7lnpdzjuk2c5cplwx.png"}
+                        image={"https://developers.redhat.com/sites/default/files/styles/article_feature/public/blog/2014/05/homepage-docker-logo.png?itok=zx0e-vcP"}
                         sx={{objectFit: "contain"}}
                     />
                     <CardContent>
@@ -123,7 +125,7 @@ export default function Skills(props: Props) {
                         component={"img"}
                         alt={"React Image"}
                         height={140}
-                        image={"https://reactjs.org/logo-og.png"}
+                        image={"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"}
                         sx={{objectFit: "contain"}}
                     />
                     <CardContent>
@@ -146,22 +148,41 @@ export default function Skills(props: Props) {
                         component={"img"}
                         alt={"Django Image"}
                         height={140}
-                        image={"https://static.djangoproject.com/img/logos/django-logo-negative.png"}
+                        image={"https://se.ewi.tudelft.nl/desosa2019/chapters/django/images/django/logo-transparent.png"}
                         sx={{objectFit: "contain"}}
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">Django</Typography>
                         <Typography variant="body2" color="text.secondary">
                             Django is een Python web framework dat snelle ontwikkeling van veilige en onderhoudbare websites mogelijk maakt.
-                            Het is ontwikkeld door ervaren ontwikkelaars, waardoor veel van de problemen die gepaard gaan met webontwikkeling opgelost worden,
-                            zodat je je kunt concentreren op het schrijven van je eigen app zonder dat je hoeft te herinventeren het wiel.
                             Ik heb Django gebruikt voor twee onderdelen: de Data API, hier wordt data naartoe verzonden, en de Algoritme service,
                             deze microservice wordt gebruikt door de Data API om data te verwerken en te classificeren.
                         </Typography>
                     </CardContent>
                     <CardActions>
                         <Button size="small" color="primary">
-                            Ik haat Python.
+                            Ik haat Python
+                        </Button>
+                    </CardActions>
+                </Card>
+                <Card sx={cardTheme}>
+                    <CardMedia
+                        component={"img"}
+                        alt={"Flutter Image"}
+                        height={140}
+                        image={"https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png"}
+                        sx={{objectFit: "contain"}}
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">Flutter</Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            Flutter is een toolkit voor het ontwikkelen van user interfaces op verschillende mobiele besturingssystemen
+                            als iOS en Android. Ik kan er niet heel veel over vertellen, gezien ik maar een maandje heb gewerkt met Flutter.
+                        </Typography>
+                    </CardContent>
+                    <CardActions>
+                        <Button size="small" color="primary">
+                            Een Flutter artefact?
                         </Button>
                     </CardActions>
                 </Card>

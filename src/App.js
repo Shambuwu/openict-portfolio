@@ -8,13 +8,15 @@ import Skills from "./components/Skills.tsx"
 import Competences from "./components/Competences.tsx"
 import CustomDivider from "./components/CustomDivider.tsx";
 import About from "./components/About.tsx";
-import {useState} from "react";
+import {useRef, useState} from "react";
 import DarkModeContext from "./hooks/DarkModeContext.tsx";
+import RefContext from "./hooks/RefContext.tsx";
 
 const font = "'Space Mono', monospace"
 
 function App() {
     const [darkMode, setDarkMode] = useState("dark");
+    const ref = useRef();
 
     const theme = createTheme({
         palette: {
@@ -23,7 +25,7 @@ function App() {
                 main: "#1b5c76",
             },
             secondary: {
-                main: "#76351b"
+                main: "#1b7662"
             },
         },
         typography: {
@@ -42,10 +44,12 @@ function App() {
                   <Navbar />
               </DarkModeContext.Provider>
               <Profile />
-              <CustomDivider text={"Wat heb ik geleerd?"} />
+              <CustomDivider text={"Wat heb ik gedaan?"} />
               <About />
               <CustomDivider text={"Wat heb ik geleerd?"} />
-              <Skills />
+              <RefContext.Provider value={ref}>
+                  <Skills ref={ref}/>
+              </RefContext.Provider>
               <CustomDivider text={"Wat heb ik gedaan?"} />
               <Projects />
               <CustomDivider text={"Wat heb ik geleerd?"} />
