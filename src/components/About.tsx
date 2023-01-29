@@ -31,17 +31,19 @@ export default function About(props: Props) {
             <Grid item xs={5}>
                 <Box
                     component={"img"}
-                    src={"https://opendidact.nl/wp-content/uploads/2021/10/cropped-robot_on_lamp.png"}
+                    src={"https://miro.medium.com/max/800/1*SZK7j8dPQuaecmaeJoWxwA.jpeg"}
                     sx={{boxShadow: 3, borderRadius: 2, width: "75%"}}
                 />
             </Grid>
-            <Grid item xs={7}>
+            <Grid item xs={7} sx={{marginTop: "auto", marginBottom: "auto"}}>
                 <Typography color={"secondary"} gutterBottom variant="h5" component="div">De Flutterkutters</Typography>
                 <Typography variant="body1" color="text.secondary">
                     Na de kennismaking met mijn medestudenten werd ik toegewezen aan een tijdelijk project.
-                    Hier leerde ik mijn projectgenoten voor de rest van het semester kennen.
-                    <Link></Link>
-                    Op alfabetische volgorde: {names.sort().map((x, index) => index !== names.length-2 ? index !== names.length-1 ? `${x}, `: ` en ${x}` : `${x}`)}.
+                    Hier leerde ik mijn projectgenoten voor de rest van het semester kennen.&nbsp;
+                    <Link href={"https://github.com/Shambuwu/openict-portfolio/blob/7807737b559aef676c6ece4cc8751a6c65fa479a/src/components/About.tsx#L45"}>
+                        Op alfabetische volgorde:&nbsp;
+                        {names.sort().map((x, index) => index !== names.length-2 ? index !== names.length-1 ? `${x}, `: ` en ${x}` : `${x}`)}.
+                    </Link>
                 </Typography>
             </Grid>
             <Grid item xs={7}>
