@@ -15,7 +15,7 @@ interface Props {
 }
 
 export default function Navbar(props: Props) {
-    const [darkMode, setDarkMode] = useContext(DarkModeContext)
+    const [darkMode, setDarkMode]: any = useContext(DarkModeContext)
     const ref = useContext(RefContext);
 
     const scrollTo = () => {

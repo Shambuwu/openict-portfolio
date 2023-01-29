@@ -7,27 +7,27 @@ import Typography from "@mui/material/Typography";
 const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
-        breakpoint: { max: 4000, min: 3000 },
+        breakpoint: {max: 4000, min: 3000},
         items: 5
     },
     desktop: {
-        breakpoint: { max: 3000, min: 1024 },
+        breakpoint: {max: 3000, min: 1024},
         items: 3
     },
     tablet: {
-        breakpoint: { max: 1024, min: 464 },
+        breakpoint: {max: 1024, min: 464},
         items: 2
     },
     mobile: {
-        breakpoint: { max: 464, min: 0 },
+        breakpoint: {max: 464, min: 0},
         items: 1
     }
 };
 
 const cardTheme = {
-    textAlign: "left", 
-    width: "80%", 
-    marginLeft: "auto", 
+    textAlign: "left",
+    width: "80%",
+    marginLeft: "auto",
     marginRight: "auto",
     paddingTop: "20px",
     boxShadow: 3
@@ -36,6 +36,7 @@ const cardTheme = {
 interface Props {
 
 }
+
 export default function Skills(props: Props) {
     const [autoPlay, setAutoPlay] = useState(true);
 
@@ -65,7 +66,8 @@ export default function Skills(props: Props) {
                             Docker wordt gebruikt om softwarepakketten in 'containers' uit te voeren.
                             Deze containers zijn geïsoleerd van elkaar en bevatten hun eigen applicaties,
                             tools, bibliotheken en configuratiebestanden. Ze kunnen met elkaar communiceren
-                            via specifieke kanalen. Voor het ontwikkelen van Powerchainger services heb ik veel Docker gebruikt.
+                            via specifieke kanalen. Voor het ontwikkelen van Powerchainger services heb ik veel Docker
+                            gebruikt.
                         </Typography>
                     </CardContent>
                     <CardActions>
@@ -85,9 +87,11 @@ export default function Skills(props: Props) {
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">Javascript</Typography>
                         <Typography variant="body2" color="text.secondary">
-                            JavaScript is een populaire taal voor het maken van interactieve webpagina's en ontwikkelen van webapplicaties.
+                            JavaScript is een populaire taal voor het maken van interactieve webpagina's en ontwikkelen
+                            van webapplicaties.
                             Het is één van de belangrijkste technologieën samen met HTML en CSS in het wereldwijde web.
-                            Ik heb Javascript gebruikt tijdens de ontwikkeling van van een front-end applicatie die ervoor
+                            Ik heb Javascript gebruikt tijdens de ontwikkeling van van een front-end applicatie die
+                            ervoor
                             zorgt dat gebruikers data kunnen versturen naar de Data API.
                         </Typography>
                     </CardContent>
@@ -109,8 +113,10 @@ export default function Skills(props: Props) {
                         <Typography gutterBottom variant="h5" component="div">Python</Typography>
                         <Typography variant="body2" color="text.secondary">
                             Python is een programmeertaal die geïnterpreteerd, interactief en objectgeoriënteerd is.
-                            Python is gemakkelijk te lezen. Het gebruikt vaak Engelse woorden terwijl andere talen leestekens gebruiken,
-                            en heeft minder grammaticale constructies dan andere talen. Ik heb Python gebruikt bij onze projecten voor de Django applicaties
+                            Python is gemakkelijk te lezen. Het gebruikt vaak Engelse woorden terwijl andere talen
+                            leestekens gebruiken,
+                            en heeft minder grammaticale constructies dan andere talen. Ik heb Python gebruikt bij onze
+                            projecten voor de Django applicaties
                             en de losse scripts die wij hebben gebruikt om data te collecteren.
                         </Typography>
                     </CardContent>
@@ -133,7 +139,8 @@ export default function Skills(props: Props) {
                         <Typography variant="body2" color="text.secondary">
                             React.js is een JavaScript framework ontwikkeld door Facebook,
                             Het is open-source en werkt met componenten.
-                            Hierdoor kun je een bepaald onderdeel van de interface hergebruiken in meerdere delen van de applicatie,
+                            Hierdoor kun je een bepaald onderdeel van de interface hergebruiken in meerdere delen van de
+                            applicatie,
                             waardoor de ontwikkeling efficiënter verloopt. (Deze pagina is ook gemaakt met React!)
                         </Typography>
                     </CardContent>
@@ -154,8 +161,10 @@ export default function Skills(props: Props) {
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">Django</Typography>
                         <Typography variant="body2" color="text.secondary">
-                            Django is een Python web framework dat snelle ontwikkeling van veilige en onderhoudbare websites mogelijk maakt.
-                            Ik heb Django gebruikt voor twee onderdelen: de Data API, hier wordt data naartoe verzonden, en de Algoritme service,
+                            Django is een Python web framework dat snelle ontwikkeling van veilige en onderhoudbare
+                            websites mogelijk maakt.
+                            Ik heb Django gebruikt voor twee onderdelen: de Data API, hier wordt data naartoe verzonden,
+                            en de Algoritme service,
                             deze microservice wordt gebruikt door de Data API om data te verwerken en te classificeren.
                         </Typography>
                     </CardContent>
@@ -176,8 +185,10 @@ export default function Skills(props: Props) {
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">Flutter</Typography>
                         <Typography variant="body2" color="text.secondary">
-                            Flutter is een toolkit voor het ontwikkelen van user interfaces op verschillende mobiele besturingssystemen
-                            als iOS en Android. Ik kan er niet heel veel over vertellen, gezien ik maar een maandje heb gewerkt met Flutter.
+                            Flutter is een toolkit voor het ontwikkelen van user interfaces op verschillende mobiele
+                            besturingssystemen
+                            als iOS en Android. Ik kan er niet heel veel over vertellen, gezien ik maar een maandje heb
+                            gewerkt met Flutter.
                         </Typography>
                     </CardContent>
                     <CardActions>
@@ -189,11 +200,15 @@ export default function Skills(props: Props) {
             </Carousel>
             <div style={{marginTop: "20px"}}>
                 {autoPlay ? (
-                    <Button size="small" color="secondary" onClick={() => {setAutoPlay(false)}}>
+                    <Button size="small" color="secondary" onClick={() => {
+                        setAutoPlay(false)
+                    }}>
                         Stop Autoplay
                     </Button>
-                ):(
-                    <Button size="small" color="secondary" onClick={() => {setAutoPlay(true)}}>
+                ) : (
+                    <Button size="small" color="secondary" onClick={() => {
+                        setAutoPlay(true)
+                    }}>
                         Start Autoplay
                     </Button>
                 )}

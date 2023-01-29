@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
+import {createTheme, ThemeProvider, CssBaseline, Backdrop, CircularProgress} from "@mui/material";
 import Navbar from "./components/Navbar.tsx"
 import Profile from "./components/Profile.tsx"
 import Projects from "./components/Projects.tsx"
@@ -8,7 +8,7 @@ import Skills from "./components/Skills.tsx"
 import Competences from "./components/Competences.tsx"
 import CustomDivider from "./components/CustomDivider.tsx";
 import About from "./components/About.tsx";
-import {useRef, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import DarkModeContext from "./hooks/DarkModeContext.tsx";
 import RefContext from "./hooks/RefContext.tsx";
 
@@ -50,7 +50,7 @@ function App() {
               <RefContext.Provider value={ref}>
                   <Skills ref={ref}/>
               </RefContext.Provider>
-              <CustomDivider text={"Wat heb ik gedaan?"} />
+              <CustomDivider text={"Wat heb ik gemaakt?"} />
               <Projects />
               <CustomDivider text={"Wat heb ik geleerd?"} />
               <Competences />
