@@ -40,10 +40,8 @@ export default function About(props: Props) {
                 <Typography variant="body1" color="text.secondary">
                     Na de kennismaking met mijn medestudenten werd ik toegewezen aan een tijdelijk project.
                     Hier leerde ik mijn projectgenoten voor de rest van het semester kennen.&nbsp;
-                    <Link href={"https://github.com/Shambuwu/openict-portfolio/blob/7807737b559aef676c6ece4cc8751a6c65fa479a/src/components/About.tsx#L45"}>
-                        Op alfabetische volgorde:&nbsp;
-                        {names.sort().map((x, index) => index !== names.length-2 ? index !== names.length-1 ? `${x}, `: ` en ${x}` : `${x}`)}.
-                    </Link>
+                    <Link href={"https://github.com/Shambuwu/openict-portfolio/blob/e81af48c5625156ca7c4021370663da80108f0b4/src/components/About.tsx#L45"}>Op alfabetische volgorde:&nbsp;</Link>
+                    {names.sort().map((x, index) => index !== names.length-2 ? index !== names.length-1 ? `${x}, `: ` en ${x}` : `${x}`)}.
                 </Typography>
             </Grid>
             <Grid item xs={7}>
