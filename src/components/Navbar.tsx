@@ -1,6 +1,7 @@
 import {AppBar, Toolbar, IconButton, Button} from "@mui/material";
 import Typography from '@mui/material/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
+// @ts-ignore
 import DarkModeContext from "../hooks/DarkModeContext.tsx";
 import {useContext} from "react";
 

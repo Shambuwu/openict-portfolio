@@ -27,8 +27,8 @@ export default function Profile(props: Props) {
                             </Grid>
                             <Avatar alt={"Levi Leuwol"} src={"https://cdn.discordapp.com/attachments/922546832951898175/1067794384151662633/FmVHQSzaUAIxluq.png"} />
                         </Grid>
-                        <p >
-                            Docker enthousiast, lijpe back-end engineer en zelfverklaarde "Dockergod".
+                        <p style={{fontSize: "15px"}}>
+                            Linux enthousiast (ik gebruik Arch btw), lijpe back-end engineer en zelfverklaarde "Dockergod".
                             Geïnteresseerd in Web Development, DevOps, vissen en <Link href={"https://www.youtube.com/watch?v=jxGfBVcH8JI"} color={"primary"}>metal!</Link>
                         </p>
                     </div>
