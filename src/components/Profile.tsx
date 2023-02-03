@@ -32,7 +32,12 @@ export default function Profile(props: Props) {
                     </motion.div>
                 </Grid>
                 <Grid item xs={5} sx={{textAlign: "left"}} zeroMinWidth>
-                    <div>
+                    <motion.div
+                        whileHover={{ scale: 1.1 }}
+                        transition={{
+                            duration: 1,
+                        }}
+                    >
                         <h4 style={{marginBottom: 0, color: "grayText"}}>Hallo, ik ben</h4>
                         <Grid container spacing={0}>
                             <Grid item xs={4}>
@@ -44,7 +49,7 @@ export default function Profile(props: Props) {
                             Linux enthousiast (ik gebruik Arch btw), lijpe back-end engineer en zelfverklaarde "Dockergod".
                             Geïnteresseerd in Web Development, DevOps, vissen en <Link href={"https://www.youtube.com/watch?v=jxGfBVcH8JI"} color={"primary"}>metal!</Link>
                         </Typography>
-                    </div>
+                    </motion.div>
                 </Grid>
             </Grid>
         </>

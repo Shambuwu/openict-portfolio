@@ -9,6 +9,7 @@ import GradientBackground from "./GradientBackground.tsx";
 import HomeIcon from '@mui/icons-material/Home';
 // @ts-ignore
 import RefContext from "../hooks/RefContext.tsx";
+import {motion} from "framer-motion";
 
 interface Props {
 
@@ -44,12 +45,16 @@ export default function Navbar(props: Props) {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         OpenICT Portfolio
                     </Typography>
-                    {darkMode === "dark" ? (
-                        <Button color="secondary" onClick={() => {setDarkMode("light")}}>Light Mode</Button>
-                    ):(
-                        <Button color="inherit" onClick={() => {setDarkMode("dark")}}>Dark Mode</Button>
+                    <motion.div
+                        whileTap={{ scale: 0.8 }}
+                    >
+                        {darkMode === "dark" ? (
+                            <Button color="secondary" onClick={() => {setDarkMode("light")}}>Light Mode</Button>
+                        ):(
+                            <Button color="inherit" onClick={() => {setDarkMode("dark")}}>Dark Mode</Button>
 
-                    )}
+                        )}
+                    </motion.div>
                 </Toolbar>
             </AppBar>
             <GradientBackground />
