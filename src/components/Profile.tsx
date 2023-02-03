@@ -1,6 +1,7 @@
 import {useContext, useState} from "react";
 import {Avatar, Box, Grid, Divider, Link} from "@mui/material";
 import Typography from "@mui/material/Typography";
+import {motion} from "framer-motion";
 
 interface Props {
 
@@ -13,11 +14,22 @@ export default function Profile(props: Props) {
         <>
             <Grid container spacing={1}>
                 <Grid item xs={6} zeroMinWidth>
-                    <Box
-                        component={"img"}
-                        src={"https://cdn.discordapp.com/attachments/759549587555352619/1069076270027120700/image.png"}
-                        sx={{boxShadow: 3, borderRadius: 2, marginTop: "25px", marginBottom: "40px"}}
-                    />
+                    <motion.div
+                        animate={{
+                            scale: [0.98, 1.03, 0.98],
+                            rotate: [0, -2, 0]
+                        }}
+                        transition={{
+                            duration: 10,
+                            repeat: Infinity,
+                        }}
+                    >
+                        <Box
+                            component={"img"}
+                            src={"https://cdn.discordapp.com/attachments/759549587555352619/1069076270027120700/image.png"}
+                            sx={{boxShadow: 3, borderRadius: 2, marginTop: "25px", marginBottom: "40px"}}
+                        />
+                    </motion.div>
                 </Grid>
                 <Grid item xs={5} sx={{textAlign: "left"}} zeroMinWidth>
                     <div>
