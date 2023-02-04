@@ -4,6 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Typography from "@mui/material/Typography";
 import SkillCard from "./SkillCard";
+import {motion} from "framer-motion";
 
 const responsive = {
     superLargeDesktop: {
@@ -36,7 +37,8 @@ const skills = {
             projecten voor de Django applicaties\
             en de losse scripts die wij hebben gebruikt om data te collecteren.",
         buttonText: "Hoe ben ik beter geworden met Python?",
-        title: "Python"
+        title: "Python",
+        href: "python"
     },
     "Docker": {
         imageName: "Docker Image",
@@ -47,7 +49,8 @@ const skills = {
                via specifieke kanalen. Voor het ontwikkelen van Powerchainger services heb ik veel Docker\
                gebruikt.",
         buttonText: "\"Dockergod\" in actie?",
-        title: "Docker"
+        title: "Docker",
+        href: "docker"
     },
     "JavaScript": {
         imageName: "JavaScript Image",
@@ -58,7 +61,8 @@ const skills = {
             Ik heb Javascript gebruikt tijdens de ontwikkeling van van een front-end applicatie die\
             ervoor zorgt dat gebruikers data kunnen versturen naar de Data API.",
         buttonText: "JS... Gek, maar wel cool",
-        title: "JavaScript"
+        title: "JavaScript",
+        href: "javascript"
     },
     "React": {
         imageName: "React Image",
@@ -68,7 +72,8 @@ const skills = {
                Hierdoor kun je een bepaald onderdeel van de interface hergebruiken in meerdere delen van de\
                applicatie, waardoor de ontwikkeling efficiënter verloopt. (Deze pagina is ook gemaakt met React!)",
         buttonText: "Affaire met een front-end framework?",
-        title: "React"
+        title: "React",
+        href: "react"
     },
     "Django": {
         imageName: "Django Image",
@@ -77,7 +82,8 @@ const skills = {
                websites mogelijk maakt. Ik heb Django gebruikt voor twee onderdelen: de Data API, hier wordt data naartoe verzonden,\
                en de Algoritme service, deze microservice wordt gebruikt door de Data API om data te verwerken en te classificeren.",
         buttonText: "Ik haat Python",
-        title: "Django"
+        title: "Django",
+        href: "django"
     },
     "Flutter": {
         imageName: "Flutter Image",
@@ -86,21 +92,30 @@ const skills = {
                Ik kan er niet heel veel over vertellen, gezien ik maar een maandje heb gewerkt met Flutter.",
         buttonText: "Een Flutter artefact?",
         title: "Flutter",
+        href: "flutter"
     },
     "Scrum": {
         imageName: "Scrum Image",
         image: "https://www.scrum.org/themes/custom/scrumorg_v2/assets/images/logo-250.png",
-        text: "Skwum",
+        text: "Scrum is een Agile framework voor projectmanagement en productontwikkeling. Het richt zich op samenwerking, flexibiliteit en het steeds \
+            verbeteren van de productieproces door het continu inspecteren en aanpassen ervan. Het bevat korte iteraties, \"Sprints\", waarin een multidisciplinair team samenwerkt om een werkende increment van het product te realiseren. \
+            Wij hebben ook met de Scrummethode gewerkt. Zie voorbeelden op deze pagina",
         buttonText: "Lekker scrummen",
         title: "Scrum",
+        href: "scrum"
+    },
+    "Communicatie": {
+        imageName: "Communication Image",
+        image: "https://cdn-icons-png.flaticon.com/512/3820/3820148.png",
+        text: "Communicatie binnen ons projectgroepje ging voornamelijk via WhatsApp en Discord. Zo gebruikten wij Whatsapp was voor meer 'persoonlijkere' communicatie. Bijvoorbeeld of iemand onderweg was, ziek thuis bleef, etc. Discord \
+               werd daarentegen meer gebruikt voor discussie rondom het project. Via Discord werden bestanden gedeeld en werd hulp geleverd wanneer iemand vastzat.",
+        buttonText: "Kan geen tekst bedenken",
+        title: "Communicatie",
+        href: "communication"
     }
 }
 
-interface Props {
-
-}
-
-export default function Skills(props: Props) {
+export default function Skills(props) {
     const [autoPlay, setAutoPlay] = useState(true);
 
     return (
@@ -117,24 +132,30 @@ export default function Skills(props: Props) {
             >
                 {Object.values(skills).map(x => {
                     return (
-                        <SkillCard imageName={x.imageName} image={x.image} text={x.text} buttonText={x.buttonText} title={x.title} />
+                        <motion.div whileHover={{ scale: 0.95 }} transition={{ type: "spring", bounce: 0.5 }}>
+                            <SkillCard imageName={x.imageName} image={x.image} text={x.text} buttonText={x.buttonText} title={x.title} href={x.href} />
+                        </motion.div>
                     )
                 })}
             </Carousel>
             <div style={{marginTop: "20px"}}>
-                {autoPlay ? (
-                    <Button size="small" color="secondary" onClick={() => {
-                        setAutoPlay(false)
-                    }}>
-                        Stop Autoplay
-                    </Button>
-                ) : (
-                    <Button size="small" color="secondary" onClick={() => {
-                        setAutoPlay(true)
-                    }}>
-                        Start Autoplay
-                    </Button>
-                )}
+                <motion.div
+                    whileTap={{ scale: 0.8 }}
+                >
+                    {autoPlay ? (
+                        <Button size="small" color="secondary" onClick={() => {
+                            setAutoPlay(false)
+                        }}>
+                            Stop Autoplay
+                        </Button>
+                    ) : (
+                        <Button size="small" color="secondary" onClick={() => {
+                            setAutoPlay(true)
+                        }}>
+                            Start Autoplay
+                        </Button>
+                    )}
+                </motion.div>
             </div>
         </>
     )

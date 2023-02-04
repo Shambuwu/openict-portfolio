@@ -11,6 +11,16 @@ import DarkModeContext from "./hooks/DarkModeContext";
 import {useState} from "react";
 import Navbar from "./components/Navbar";
 import Qualities from "./components/Qualities";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from "./pages/Home";
+import Python from "./pages/Python";
+import Javascript from "./pages/Javascript";
+import React from "./pages/React";
+import Django from "./pages/Django";
+import Docker from "./pages/Docker";
+import Flutter from "./pages/Flutter";
+import Scrum from "./pages/Scrum";
+import Communication from "./pages/Communication";
 
 const font = "'Space Mono', monospace"
 
@@ -42,16 +52,19 @@ function App() {
                 <DarkModeContext.Provider value={[darkMode, setDarkMode]}>
                     <Navbar />
                 </DarkModeContext.Provider>
-                <Profile />
-                <CustomDivider text={"Wat heb ik gedaan?"} />
-                <About />
-                <CustomDivider text={"Wat heb ik geleerd?"} />
-                <Skills />
-                <CustomDivider text={"Wat heb ik gemaakt?"} />
-                <Projects />
-                <CustomDivider text={"Welke kwaliteiten heb ik laten zien?"} />
-                <Qualities />
-                <CustomDivider text={"Wat heb ik geleerd?"} />
+                <BrowserRouter>
+                    <Routes>
+                        <Route index element={<Home />}/>
+                        <Route path={"python"} element={<Python />}/>
+                        <Route path={"javascript"} element={<Javascript />} />
+                        <Route path={"react"} element={<React />} />
+                        <Route path={"django"} element={<Django />} />
+                        <Route path={"docker"} element={<Docker />} />
+                        <Route path={"flutter"} element={<Flutter />} />
+                        <Route path={"scrum"} element={<Scrum />} />
+                        <Route path={"communication"} element={<Communication />} />
+                    </Routes>
+                </BrowserRouter>
             </ThemeProvider>
         </div>
     )

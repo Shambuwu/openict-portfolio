@@ -13,6 +13,7 @@ import {
 import Typography from "@mui/material/Typography";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Carousel from "react-multi-carousel";
+import {motion} from "framer-motion";
 interface Props {
 
 }
@@ -39,38 +40,38 @@ export default function Projects(props: Props) {
     };
 
     return (
-        <Grid container spacing={3}>
+        <Grid container spacing={3} width={"90%"} marginX={"auto"}>
             <Grid item xs={5}>
                 <Box>
                     <Typography color={"secondary"} gutterBottom variant={"h6"}>
                         Hieronder staan de links naar alle Github repositories. Deze staan wel op privé.
                     </Typography>
                     <List sx={{}}>
-                        <ListItem disablePadding>
+                        <ListItem disablePadding component={motion.div} whileHover={{ scale: 1.1 }} transition={{ type: "spring", bounce: 0.5 }}>
                             <ListItemButton href={"https://github.com/Shambuwu/powerchainger"}>
                                 <GitHubIcon />
                                 <ListItemText primary={"Deprecated Powerchainger API (Deze wordt niet meer gebruikt)"}/>
                             </ListItemButton>
                         </ListItem>
-                        <ListItem disablePadding>
+                        <ListItem disablePadding component={motion.div} whileHover={{ scale: 1.1 }} transition={{ type: "spring", bounce: 0.5 }}>
                             <ListItemButton href={"https://github.com/Shambuwu/powerchainger-alg-server"}>
                                 <GitHubIcon />
                                 <ListItemText primary={"Powerchainger Data API"}/>
                             </ListItemButton>
                         </ListItem>
-                        <ListItem disablePadding>
+                        <ListItem disablePadding component={motion.div} whileHover={{ scale: 1.1 }} transition={{ type: "spring", bounce: 0.5 }}>
                             <ListItemButton href={"https://github.com/Shambuwu/powerchainger-alg-frontend"}>
                                 <GitHubIcon />
                                 <ListItemText primary={"Powerchainger Front-end"}/>
                             </ListItemButton>
                         </ListItem>
-                        <ListItem disablePadding>
+                        <ListItem disablePadding component={motion.div} whileHover={{ scale: 1.1 }} transition={{ type: "spring", bounce: 0.5 }}>
                             <ListItemButton href={"https://github.com/Shambuwu/powerchainger-alg-service"}>
                                 <GitHubIcon />
                                 <ListItemText primary={"Powerchainger Algorithm Service"}/>
                             </ListItemButton>
                         </ListItem>
-                        <ListItem disablePadding>
+                        <ListItem disablePadding component={motion.div} whileHover={{ scale: 1.1 }} transition={{ type: "spring", bounce: 0.5 }}>
                             <ListItemButton href={"https://github.com/Shambuwu/openict-portfolio"}>
                                 <GitHubIcon />
                                 <ListItemText primary={"De source code van dit portfolio"}/>

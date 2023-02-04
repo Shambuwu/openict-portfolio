@@ -1,8 +1,5 @@
 
-# Project Title
-
-OpenICT portfolio Levi Leuwol 
-
+# OpenICT Portfolio Levi Leuwol
 
 ## Run Locally
 

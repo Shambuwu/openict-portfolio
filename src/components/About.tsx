@@ -146,18 +146,18 @@ export default function About(props: Props) {
                     >
                         <Typography color={"secondary"} gutterBottom variant="h5" component="div">...Hoe het afliep</Typography>
                         <Typography variant="body1" color="inherit" align={"left"}>
-                            Het project leek echter wat minder soepel te verlopen dan gehoopt. Tom had een beroerte opgelopen en voelde zich
+                            Het project leek echter wat minder soepel te verlopen dan gehoopt. Tom had een paniekaanval opgelopen en voelde zich
                             dus niet meer in staat om verder te werken aan het project (niet dat hij daarvoor wel wat deed). Ook ontstonden er frustraties tussen
                             projectgenoten. Niet iedereen contribueerde even veel aan het project. Hierdoor groeiden irritaties naar elkaar beetje bij beetje.
                             Berend was inmiddels ook verdwenen uit de groep.
-                            Wegens onzekerheid of hij de minor kon halen met <Link href={"https://github.com/berendkorendijk"}>zijn contributies</Link> moest hij vervroegd
+                            Wegens onzekerheid of hij de minor kon halen met <Link href={"https://github.com/berendkorendijk"}>zijn contributies</Link>, moest hij vervroegd
                             zijn portfolio inleveren.
                             <br/><br/>
                             Alleen Geert, Kevin en ik waren dus over. Met minder afleiding waren we wel stukken meer productief, maar ook dit was niet genoeg.
                             Ik wil mezelf niet als heilige doen overkomen, maar er was zeker een gigantische kloof tussen hoeveel elk projectgenoot heeft opgeleverd. Hoewel ik zelf
                             waarschijnlijk ook eerder had kunnen beginnen, voel ik me alsnog een beetje in de maling genomen.
                             <br/><br/>
-                            Tot op het moment dat ik dit schrijf, staat er nog steeds geen algoritme. Ik heb de hele datastroom opgezet, de back-end structuur, alles in containers gezet,
+                            Tot op het moment dat ik dit schrijf, staat er geen algoritme. Ik heb de hele datastroom opgezet, de back-end structuur, alles in containers gezet,
                             ik heb een front-end gebouwd, ik heb een service gemaakt voor het algoritme die dient als makkelijke interface voor de Data API.
                             Er is mij ook beloofd door één van mijn projectgenoten dat hij het algoritme zou maken, toch zie ik niks.
                         </Typography>

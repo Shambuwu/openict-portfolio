@@ -17,31 +17,30 @@ interface Props {
 
 export default function Navbar(props: Props) {
     const [darkMode, setDarkMode]: any = useContext(DarkModeContext)
-    const ref = useContext(RefContext);
-
-    const scrollTo = () => {
-        // @ts-ignore
-        ref.current?.scrollIntoView({behavior: "smooth"})
-    }
 
     return (
         <div>
             <AppBar position={"fixed"}>
                 <Toolbar>
-                    <IconButton
-                        size="large"
-                        edge="start"
-                        color="inherit"
-                        aria-label="menu"
-                        sx={{ mr: 2 }}
+                    <motion.div
+                        whileTap={{ scale: 0.8 }}
                     >
-                        <HomeIcon />
-                    </IconButton>
-                    <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                        <Button color={"inherit"} onClick={scrollTo}>test</Button>
-                        <Button color={"inherit"}>test</Button>
-                        <Button color={"inherit"}>test</Button>
-                    </Box>
+                        <IconButton
+                            size="large"
+                            edge="start"
+                            color="inherit"
+                            aria-label="menu"
+                            href={"/"}
+                            sx={{ mr: 2 }}
+                        >
+                            <HomeIcon />
+                        </IconButton>
+                    </motion.div>
+                    {/*<Box sx={{ display: { xs: 'none', sm: 'block' } }}>*/}
+                    {/*    <Button color={"inherit"} href={"/test"}>test</Button>*/}
+                    {/*    <Button color={"inherit"} href={"/test"}>test</Button>*/}
+                    {/*    <Button color={"inherit"} href={"/test"}>test</Button>*/}
+                    {/*</Box>*/}
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         OpenICT Portfolio
                     </Typography>

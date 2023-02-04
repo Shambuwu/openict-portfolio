@@ -6,7 +6,8 @@ interface Props {
     image: string,
     text: string,
     buttonText: string,
-    title: string
+    title: string,
+    href: string,
 }
 
 export default function SkillCard(props: Props) {
@@ -16,7 +17,7 @@ export default function SkillCard(props: Props) {
         marginLeft: "auto",
         marginRight: "auto",
         paddingTop: "20px",
-        boxShadow: 3
+        boxShadow: 3,
     }
 
     return (
@@ -35,7 +36,7 @@ export default function SkillCard(props: Props) {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" href={props.href}>
                     {props.buttonText}
                 </Button>
             </CardActions>
