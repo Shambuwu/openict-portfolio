@@ -49,6 +49,32 @@ function Communication() {
                         />
                     </motion.div>
                 </Grid>
+                <Grid item xs={7} marginTop={"30px"}>
+                    <Typography
+                        sx={{marginTop: "50px"}}
+                        color={"secondary"}
+                        gutterBottom
+                        variant="h5"
+                        component={motion.div}
+                        animate={{ scale: [0.99, 1.00, 0.99] }}
+                        transition={{ duration: 2, repeat: Infinity }}
+                    >
+                        WhatsApp
+                    </Typography>
+                    <Typography variant="body1" color="inherit" align={"left"} sx={{width: "70%", marginLeft: "auto", marginRight: "auto"}}>
+                        Zoals ik eerder al zei ging communicatie via WhatsApp meer over "persoonlijke" zaken. Rechts is bijvoorbeeld een screenshot van Geert die aangeeft dat hij later is, omdat zijn wekker niet afging.
+                        Dit is een goed voorbeeld van hoe onze WhatsApp groep werd gebruikt.
+                    </Typography>
+                </Grid>
+                <Grid item xs={5} marginTop={"30px"}>
+                    <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", bounce: 0.5 }}>
+                        <Box
+                            component={"img"}
+                            src={"https://cdn.discordapp.com/attachments/759549587555352619/1071518716686258206/image.png"}
+                            sx={{boxShadow: 3, borderRadius: 2, height: "80%"}}
+                        />
+                    </motion.div>
+                </Grid>
             </Grid>
         </>
     )
