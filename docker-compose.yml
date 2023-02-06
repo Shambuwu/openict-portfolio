@@ -1,1 +1,10 @@
-
+version: '3.7'
+services:
+  web:
+    build: .
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "80:80"
+     
