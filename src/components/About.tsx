@@ -54,7 +54,7 @@ export default function About(props: Props) {
                     <Typography variant="body1" color="inherit" align={"left"}>
                         Na de kennismaking met mijn medestudenten werd ik toegewezen aan een tijdelijk project.
                         Hier leerde ik mijn projectgenoten voor de rest van het semester kennen.&nbsp;
-                        <Link href={"https://github.com/Shambuwu/openict-portfolio/blob/92846ce5e2d307ca32242075797087f1355972e2/src/components/About.tsx#L44"}>Op alfabetische volgorde:</Link>
+                        <Link href={"https://github.com/Shambuwu/openict-portfolio/blob/21a8e8ef9105312af57e34672381ddc339d70c4e/src/components/About.tsx#L58"}>Op alfabetische volgorde:</Link>
                         &nbsp;{names.sort().map((x, index) => index !== names.length-2 ? index !== names.length-1 ? `${x}, `: ` en ${x}` : `${x}`)}.&nbsp;
                         {/* Ik ben zo cool, ik weet het... Ik hoop dat iemand dit leest :^( */}
                         Aan ons werd de taak gegeven om het mobiele platform van de Hanzehogeschool check-in app te repareren en te verbeteren. Niemand van ons had echter
