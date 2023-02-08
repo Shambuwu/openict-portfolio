@@ -53,11 +53,7 @@ export default function About(props: Props) {
                     <Typography color={"secondary"} gutterBottom variant="h5" component="div">De Flutterkutters</Typography>
                     <Typography variant="body1" color="inherit" align={"left"}>
                         Na de kennismaking met mijn medestudenten werd ik toegewezen aan een tijdelijk project.
-                        Hier leerde ik mijn projectgenoten voor de rest van het semester kennen.&nbsp;
-                        <Link href={"https://github.com/Shambuwu/openict-portfolio/blob/21a8e8ef9105312af57e34672381ddc339d70c4e/src/components/About.tsx#L58"}>Op alfabetische volgorde:</Link>
-                        &nbsp;{names.sort().map((x, index) => index !== names.length-2 ? index !== names.length-1 ? `${x}, `: ` en ${x}` : `${x}`)}.&nbsp;
-                        {/* Ik ben zo cool, ik weet het... Ik hoop dat iemand dit leest :^( */}
-                        Aan ons werd de taak gegeven om het mobiele platform van de Hanzehogeschool check-in app te repareren en te verbeteren. Niemand van ons had echter
+                        Hier leerde ik mijn projectgenoten voor de rest van het semester kennen. Aan ons werd de taak gegeven om het mobiele platform van de Hanzehogeschool check-in app te repareren en te verbeteren. Niemand van ons had echter
                         ervaring met mobile development, laat staan dat het opzetten van een Flutter omgeving nog redelijk complex is.
                         <br/><br/>
                         De eerste paar weken werden gebruikt om een Flutter environment werkend te hebben en om een beetje kennis te maken met Flutter.
@@ -146,8 +142,7 @@ export default function About(props: Props) {
                     >
                         <Typography color={"secondary"} gutterBottom variant="h5" component="div">...Hoe het afliep</Typography>
                         <Typography variant="body1" color="inherit" align={"left"}>
-                            Het project leek echter wat minder soepel te verlopen dan gehoopt. Tom had een paniekaanval opgelopen en voelde zich
-                            dus niet meer in staat om verder te werken aan het project (niet dat hij daarvoor wel wat deed). Ook ontstonden er frustraties tussen
+                            Het project leek echter wat minder soepel te verlopen dan gehoopt. Zo ontstonden er frustraties tussen
                             projectgenoten. Niet iedereen contribueerde even veel aan het project. Hierdoor groeiden irritaties naar elkaar beetje bij beetje.
                             <br/><br/>
                             Met minder afleiding waren we wel stukken meer productief, maar ook dit was niet genoeg.
