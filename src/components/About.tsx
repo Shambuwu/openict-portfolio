@@ -149,9 +149,6 @@ export default function About(props: Props) {
                             Het project leek echter wat minder soepel te verlopen dan gehoopt. Tom had een paniekaanval opgelopen en voelde zich
                             dus niet meer in staat om verder te werken aan het project (niet dat hij daarvoor wel wat deed). Ook ontstonden er frustraties tussen
                             projectgenoten. Niet iedereen contribueerde even veel aan het project. Hierdoor groeiden irritaties naar elkaar beetje bij beetje.
-                            Berend was inmiddels ook verdwenen uit de groep.
-                            Wegens onzekerheid of hij de minor kon halen met <Link href={"https://github.com/berendkorendijk"}>zijn contributies</Link>, moest hij vervroegd
-                            zijn portfolio inleveren.
                             <br/><br/>
                             Alleen Geert, Kevin en ik waren dus over. Met minder afleiding waren we wel stukken meer productief, maar ook dit was niet genoeg.
                             Ik wil mezelf niet als heilige doen overkomen, maar er was zeker een gigantische kloof tussen hoeveel elk projectgenoot heeft opgeleverd. Hoewel ik zelf
