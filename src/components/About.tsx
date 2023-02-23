@@ -150,7 +150,7 @@ export default function About(props: Props) {
                             dus niet meer in staat om verder te werken aan het project (niet dat hij daarvoor wel wat deed). Ook ontstonden er frustraties tussen
                             projectgenoten. Niet iedereen contribueerde even veel aan het project. Hierdoor groeiden irritaties naar elkaar beetje bij beetje.
                             <br/><br/>
-                            Alleen Geert, Kevin en ik waren dus over. Met minder afleiding waren we wel stukken meer productief, maar ook dit was niet genoeg.
+                            Met minder afleiding waren we wel stukken meer productief, maar ook dit was niet genoeg.
                             Ik wil mezelf niet als heilige doen overkomen, maar er was zeker een gigantische kloof tussen hoeveel elk projectgenoot heeft opgeleverd. Hoewel ik zelf
                             waarschijnlijk ook eerder had kunnen beginnen, voel ik me alsnog een beetje in de maling genomen.
                             <br/><br/>
