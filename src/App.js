@@ -21,6 +21,8 @@ import Docker from "./pages/Docker";
 import Flutter from "./pages/Flutter";
 import Scrum from "./pages/Scrum";
 import Communication from "./pages/Communication";
+import KnowledgeDevelopment from "./pages/KnowledgeDevelopment";
+import QualityProduct from "./pages/QualityProduct";
 
 const font = "'Space Mono', monospace"
 
@@ -63,6 +65,8 @@ function App() {
                         <Route path={"flutter"} element={<Flutter />} />
                         <Route path={"scrum"} element={<Scrum />} />
                         <Route path={"communication"} element={<Communication />} />
+                        <Route path={"knowledge_development"} element={<KnowledgeDevelopment />} />
+                        <Route path={"quality_product"} element={<QualityProduct />} />
                     </Routes>
                 </BrowserRouter>
             </ThemeProvider>

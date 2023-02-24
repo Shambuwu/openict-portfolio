@@ -14,11 +14,11 @@ function Home() {
     return (
         <>
             <Profile />
-            <CustomDivider text={"Wat heb ik gedaan?"} />
+            <CustomDivider text={"Context"} />
             <About />
-            <CustomDivider text={"Wat heb ik geleerd?"} />
+            <CustomDivider text={"Geleerde/gebruikte vaardigheden"} />
             <Skills />
-            <CustomDivider text={"Wat heb ik gemaakt?"} />
+            <CustomDivider text={"Repositories"} />
             <Projects />
             <CustomDivider text={"Welke kwaliteiten heb ik laten zien?"} />
             <Qualities />

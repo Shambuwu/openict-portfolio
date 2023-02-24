@@ -38,16 +38,17 @@ export default function Profile(props: Props) {
                             duration: 1,
                         }}
                     >
-                        <h4 style={{marginBottom: 0, color: "grayText"}}>Hallo, ik ben</h4>
+                        <h4 style={{marginBottom: 0, color: "grayText"}}>OpenICT portfolio van:</h4>
                         <Grid container spacing={0}>
                             <Grid item xs={4}>
                                 <Typography variant={"h4"} sx={{marginTop: 0, marginBottom: 0}}>Levi Leuwol</Typography>
                             </Grid>
-                            <Avatar alt={"Levi Leuwol"} src={"https://cdn.discordapp.com/attachments/922546832951898175/1067794384151662633/FmVHQSzaUAIxluq.png"} />
+                            {/*<Avatar alt={"Levi Leuwol"} src={"https://cdn.discordapp.com/attachments/922546832951898175/1067794384151662633/FmVHQSzaUAIxluq.png"} />*/}
                         </Grid>
                         <Typography color={"inherit"} sx={{fontSize: "15px", marginTop: "10px"}}>
-                            Linux enthousiast (ik gebruik Arch btw), lijpe back-end engineer en zelfverklaarde "Dockergod".
-                            Geïnteresseerd in Web Development, DevOps, vissen en <Link href={"https://www.youtube.com/watch?v=jxGfBVcH8JI"} color={"primary"}>metal!</Link>
+                            Backend developer<br/>
+                            Docker<br/>
+                            Symfony
                         </Typography>
                     </motion.div>
                 </Grid>
