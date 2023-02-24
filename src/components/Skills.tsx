@@ -36,7 +36,7 @@ const skills = {
             en heeft minder grammaticale constructies dan andere talen. Ik heb Python gebruikt bij onze\
             projecten voor de Django applicaties\
             en de losse scripts die wij hebben gebruikt om data te collecteren.",
-        buttonText: "Hoe ben ik beter geworden met Python?",
+        buttonText: "Klik hier voor meer informatie",
         title: "Python",
         href: "python"
     },
@@ -45,10 +45,10 @@ const skills = {
         image: "https://developers.redhat.com/sites/default/files/styles/article_feature/public/blog/2014/05/homepage-docker-logo.png?itok=zx0e-vcP",
         text: "Docker wordt gebruikt om softwarepakketten in 'containers' uit te voeren.\
                Deze containers zijn geïsoleerd van elkaar en bevatten hun eigen applicaties,\
-               tools, bibliotheken en configuratiebestanden. Ze kunnen met elkaar communiceren\
-               via specifieke kanalen. Voor het ontwikkelen van Powerchainger services heb ik veel Docker\
+               tools, bibliotheken en configuratiebestanden. Deze kunnen met elkaar communiceren\
+               via specifieke kanalen. Voor het ontwikkelen van Powerchainger services heeft de student veel Docker\
                gebruikt.",
-        buttonText: "\"Dockergod\" in actie?",
+        buttonText: "Klik hier voor meer informatie",
         title: "Docker",
         href: "docker"
     },
@@ -58,9 +58,9 @@ const skills = {
         text: "JavaScript is een populaire taal voor het maken van interactieve webpagina's en ontwikkelen\
             van webapplicaties.\
             Het is één van de belangrijkste technologieën samen met HTML en CSS in het wereldwijde web.\
-            Ik heb Javascript gebruikt tijdens de ontwikkeling van van een front-end applicatie die\
+            De student heeft Javascript gebruikt tijdens de ontwikkeling van van een frontend applicatie die\
             ervoor zorgt dat gebruikers data kunnen versturen naar de Data API.",
-        buttonText: "JS... Gek, maar wel cool",
+        buttonText: "Klik hier voor meer informatie",
         title: "JavaScript",
         href: "javascript"
     },
@@ -70,8 +70,8 @@ const skills = {
         text: "React.js is een JavaScript framework ontwikkeld door Facebook,\
                Het is open-source en werkt met componenten.\
                Hierdoor kun je een bepaald onderdeel van de interface hergebruiken in meerdere delen van de\
-               applicatie, waardoor de ontwikkeling efficiënter verloopt. (Deze pagina is ook gemaakt met React!)",
-        buttonText: "Affaire met een front-end framework?",
+               applicatie, waardoor de ontwikkeling efficiënter verloopt.",
+        buttonText: "Klik hier voor meer informatie",
         title: "React",
         href: "react"
     },
@@ -81,7 +81,7 @@ const skills = {
         text: "Django is een Python web framework dat snelle ontwikkeling van veilige en onderhoudbare\
                websites mogelijk maakt. Ik heb Django gebruikt voor twee onderdelen: de Data API, hier wordt data naartoe verzonden,\
                en de Algoritme service, deze microservice wordt gebruikt door de Data API om data te verwerken en te classificeren.",
-        buttonText: "Ik haat Python",
+        buttonText: "Klik hier voor meer informatie",
         title: "Django",
         href: "django"
     },
@@ -89,8 +89,8 @@ const skills = {
         imageName: "Flutter Image",
         image: "https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png",
         text: "Flutter is een toolkit voor het ontwikkelen van user interfaces op verschillende mobiele besturingssystemen als iOS en Android.\
-               Ik kan er niet heel veel over vertellen, gezien ik maar een maandje heb gewerkt met Flutter.",
-        buttonText: "Een Flutter artefact?",
+               De student heeft tijdens de eerste fase van het traject gewerkt met Flutter.",
+        buttonText: "Klik hier voor meer informatie",
         title: "Flutter",
         href: "flutter"
     },
@@ -99,17 +99,17 @@ const skills = {
         image: "https://www.scrum.org/themes/custom/scrumorg_v2/assets/images/logo-250.png",
         text: "Scrum is een Agile framework voor projectmanagement en productontwikkeling. Het richt zich op samenwerking, flexibiliteit en het steeds \
             verbeteren van de productieproces door het continu inspecteren en aanpassen ervan. Het bevat korte iteraties, \"Sprints\", waarin een multidisciplinair team samenwerkt om een werkende increment van het product te realiseren. \
-            Wij hebben ook met de Scrummethode gewerkt. Zie voorbeelden op deze pagina",
-        buttonText: "Lekker scrummen",
+            De projectgenoten en student hebben ook met de Scrummethode gewerkt. Zie voorbeelden op deze pagina",
+        buttonText: "Klik hier voor meer informatie",
         title: "Scrum",
         href: "scrum"
     },
     "Communicatie": {
         imageName: "Communication Image",
         image: "https://cdn-icons-png.flaticon.com/512/3820/3820148.png",
-        text: "Communicatie binnen ons projectgroepje ging voornamelijk via WhatsApp en Discord. Zo gebruikten wij Whatsapp was voor meer 'persoonlijkere' communicatie. Bijvoorbeeld of iemand onderweg was, ziek thuis bleef, etc. Discord \
+        text: "Communicatie binnen de projectgroep verliep voornamelijk via WhatsApp en Discord. Whatsapp was voor 'persoonlijkere' communicatie. Bijvoorbeeld of een projectgenoot onderweg was, ziek thuis bleef, etc. Discord \
                werd daarentegen meer gebruikt voor discussie rondom het project. Via Discord werden bestanden gedeeld en werd hulp geleverd wanneer iemand vastzat.",
-        buttonText: "Kan geen tekst bedenken",
+        buttonText: "Klik hier voor meer informatie",
         title: "Communicatie",
         href: "communication"
     }

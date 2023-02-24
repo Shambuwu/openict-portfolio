@@ -71,7 +71,7 @@ function KnowledgeDevelopment() {
                         Docker
                     </Typography>
                     <Typography variant="body1" color="inherit" align={"left"} sx={{width: "70%", marginLeft: "auto", marginRight: "auto"}}>
-                        Gedurende het project heeft de student kennis opgedaan over DOcker en de toepassing hiervan in een software-ontwikkelomgeving. De student is dankzij zijn bijbaan als backend developer bekend geraakt
+                        Gedurende het project heeft de student kennis opgedaan over Docker en de toepassing hiervan in een software-ontwikkelomgeving. De student is dankzij zijn bijbaan als backend developer bekend geraakt
                         met de basisprincipes van Docker. Tijdens de eerste sprints van het Powerchainger project heeft de student zijn kennis van Docker verder uitgebreid door zich te verdiepen in geavanceerdere onderwerpen, zoals het gebruik van Docker Compose
                         voor het opzetten van meerdere containers.
                     </Typography>
