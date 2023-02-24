@@ -123,7 +123,12 @@ export default function Skills(props) {
         <>
             {hidden ? (
                 <>
-                    <Typography style={{color: "red"}}>De onderdelen in deze sectie bevatten mogelijk informeel taalgebruik!</Typography>
+                    <Typography
+                        style={{color: "red"}}
+                        component={motion.div}
+                        animate={{ scale: [0.95, 1.00, 0.95] }}
+                        transition={{ duration: 2, repeat: Infinity }}
+                    >De onderdelen in deze sectie bevatten mogelijk informeel taalgebruik!</Typography>
                     <Button onClick={() => setHidden(false)}>Laten zien</Button>
                 </>
             ) : (

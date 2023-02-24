@@ -96,23 +96,23 @@ export default function Qualities() {
                     </Link>
                 </Grid>
                 <Grid item xs={10} marginTop={"30px"} component={motion.div} whileHover={{ scale: 1.1 }}>
-                    <Link href={"proactive_acting"} style={{ textDecoration: 'none' }} color={"inherit"}>
+                    <Link href={"proactive_handling"} style={{ textDecoration: 'none' }} color={"inherit"}>
                         <Typography textAlign={"left"} width={"50%"} marginX={"auto"}>
                             <h3 style={{color: "#1b7662"}}>Pro-actief Handelen</h3>
-                            <span style={{color: "#1b7662"}}>Pro-actief handelen</span> heb ik vooral bewezen met de <Link href={"/react"}>front-end applicatie</Link>. Toen we nieuwe functionaliteit toegevoegd hadden aan de Data API, bestuurden
-                            we deze met cURL requests. Ik wist dat dit een bottleneck zou gaan vormen tijdens de ontwikkeling, dus besloot ik pro-actief een front-end applicatie te bouwen voor deze functionaliteit.
+                            Pro-actief handelen is een kwaliteit die aangeeft dat iemand vooruitdenkt en initiatief neemt om problemen op te lossen voordat ze zich voordoen.
+                            Het is de vaardigheid om verantwoordelijkheid te nemen voor het identificeren van problemen en het vinden van oplossingen, zonder dat iemand daar expliciet om vraagt.
                         </Typography>
                     </Link>
                 </Grid>
                 <Grid item xs={2} />
                 <Grid item xs={2} />
                 <Grid item xs={10} marginTop={"30px"} component={motion.div} whileHover={{ scale: 1.1 }}>
-                    <Link href={"/reflection"} style={{ textDecoration: 'none' }} color={"inherit"}>
-                        <Typography textAlign={"left"} width={"50%"} marginX={"auto"}>
-                            <h3 style={{color: "#1b7662"}}>Reflecteren</h3>
-                            Mijn <span style={{color: "#1b7662"}}>Reflectie</span> staat kort en bondig beschreven bij "Wat heb ik gedaan?" op deze pagina.
-                        </Typography>
-                    </Link>
+                    <Typography textAlign={"left"} width={"50%"} marginX={"auto"}>
+                        <h3 style={{color: "#1b7662"}}>Reflecteren</h3>
+                        Achteraf had ik misschien meer leiderschap moeten tonen. Ik ben redelijk verlegen, dus ik vind het aanspreken van projectgenoten moeilijk.
+                        Hier moet ik wel aan gaan werken, gezien ik waarschijnlijk mijn hele leven langs in teamverband zal gaan werken. Verder ben ik
+                        erg tevreden met de vaardigheden die ik heb geleerd en de kennis die ik heb opgedaan.
+                    </Typography>
                 </Grid>
             </Grid>
         </>

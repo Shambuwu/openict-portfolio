@@ -29,6 +29,7 @@ import Cooperation from "./pages/Cooperation";
 import MessageDelivery from "./pages/MessageDelivery";
 import Planning from "./pages/Planning";
 import Adaptability from "./pages/Adaptability";
+import ProActiveHandling from "./pages/ProActiveHandling";
 
 const font = "'Space Mono', monospace"
 
@@ -79,6 +80,7 @@ function App() {
                         <Route path={"message_delivery"} element={<MessageDelivery />} />
                         <Route path={"planning"} element={<Planning />} />
                         <Route path={"adaptability"} element={<Adaptability />} />
+                        <Route path={"proactive_handling"} element={<ProActiveHandling />} />
                     </Routes>
                 </BrowserRouter>
             </ThemeProvider>
