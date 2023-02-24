@@ -1,12 +1,11 @@
-import React from "react";
 import Typography from "@mui/material/Typography";
 import {motion} from "framer-motion";
 import CustomDivider from "../components/CustomDivider";
-import {Box, Button, Grid} from "@mui/material";
+import {Box, Grid} from "@mui/material";
 import Terminal, {TerminalOutput} from "react-terminal-ui";
 
-function Python() {
-    return (
+function CreativeWork() {
+    return(
         <>
             <Typography
                 sx={{marginTop: "50px"}}
@@ -17,17 +16,13 @@ function Python() {
                 animate={{ scale: [0.95, 1.00, 0.95] }}
                 transition={{ duration: 2, repeat: Infinity }}
             >
-                Python
+                Creatief Werken
             </Typography>
             <Typography variant="body1" color="inherit" align={"left"} sx={{width: "50%", marginLeft: "auto", marginRight: "auto"}}>
-                Ik heb een hekel aan Python. Ik haat pip en ik haat virtual environments. Leuk feitje: tijdens het project heb ik de OS van mijn laptop compleet vernietigd. Hoe? Pip.
-                Ik had een virtual environment klaargezet, maar deze wou een specifieke package absoluut niet installeren. Dus dacht ik: "Nou ja, dan installeer ik deze maar globally"
-                Dus ik doe lekker pip install ... en ik denk dat alles goed is gegaan. Dezelfde avond wou ik mijn laptop nog even updaten, dus ik gebruik mijn main package manager: sudo pacman -Syu.
-                Errors. Dependency errors. Waarom? Pip had besloten om alle packages in mijn virtual environment lokaal te installeren. Nu had ik honderderen dependency conflicts. Ik heb geprobeerd
-                dit handmatig op te lossen, maar tevergeefs. En dus moest ik mijn OS wipen, en een nieuwe OS installeren. Ik haat Python.
+                Tijdens het realiseren van de beroepsproducten is de student tegen meerdere problemen aangelopen.
             </Typography>
-            <CustomDivider text={"Voorbeelden"} />
-            <Grid container spacing={0} sx={{width: "90%"}}>
+            <CustomDivider text={"Bewijsstukken"} />
+            <Grid container spacing={0} sx={{width: "95%"}}>
                 <Grid item xs={7}>
                     <Typography
                         sx={{marginTop: "50px"}}
@@ -38,17 +33,14 @@ function Python() {
                         animate={{ scale: [0.99, 1.00, 0.99] }}
                         transition={{ duration: 2, repeat: Infinity }}
                     >
-                        Powerchainger Data API
+                        De Powerchainger VPS
                     </Typography>
                     <Typography variant="body1" color="inherit" align={"left"} sx={{width: "70%", marginLeft: "auto", marginRight: "auto"}}>
-                        De Data API is gebouwd in Python (Django). Ik heb geleerd te werken met Python en het openen van CSV files, API endpoints en het maken van tests.
+                        Powerchainger hoste twee componenten op hun VPS. Een proxyserver, dit is dezelfde proxyserver die wij hebben aangepast, en een dataprocessor. De dataprocessor was gemaakt door twee medewerkers van Powerchainger.
+                        We liepen echter tegen een paar problemen aan. De dataprocessor werkte met een andere datastructuur dan onze p1-reader, de projectgroep had moeite met het draaiend krijgen van deze dataprocessor en de dataprocessor had nog
+                        geen rekening gehouden met een mogelijke toevoeging van een algoritme, hierdoor zou het extra werk kosten om deze aan te passen naar een structuur die dat wel zou ondersteunen.
+                        Dus, besloot de projectgroep een eigen dataprocessor te maken. Dit is nu de "Powerchainger algorithm server".
                     </Typography>
-                    <Button href={"http://shambuwu.com:8000/"}>
-                        API
-                    </Button>
-                    <Button href={"https://github.com/Shambuwu/powerchainger-alg-server"}>
-                        Source code
-                    </Button>
                 </Grid>
                 <Grid item xs={5}>
                     <Terminal name={"Powerchainger Data API"} height={"100px"}>
@@ -56,7 +48,7 @@ function Python() {
                         <TerminalOutput>Powerchainger algorithm API.</TerminalOutput>
                     </Terminal>
                 </Grid>
-                <Grid item xs={7} marginTop={10}>
+                <Grid item xs={7}>
                     <Typography
                         sx={{marginTop: "50px"}}
                         color={"secondary"}
@@ -66,27 +58,23 @@ function Python() {
                         animate={{ scale: [0.99, 1.00, 0.99] }}
                         transition={{ duration: 2, repeat: Infinity }}
                     >
-                        Powerchainger algorithm service
+                        De Webinterface
                     </Typography>
                     <Typography variant="body1" color="inherit" align={"left"} sx={{width: "70%", marginLeft: "auto", marginRight: "auto"}}>
-                        Ook de Powerchainger algorithm service is gemaakt in Python (Django). Voor meer informatie zie Django pagina.
+                        Ook de webinterface is gemaakt als oplossing op een probleem waar de projectgroep tegenaan liep. Namelijk het besturen van datacollectie. Voordat de webinterface bestond, moesten gebruikers handmatig curl requests sturen.
+                        Één request om de datacollectie te starten en één request om de datacollectie te stoppen. Gezien dit niet heel erg gebruiksvriendelijk is, besloot de student een webinterface te maken. Doormiddel van een web grafische interface
+                        kunnen gebruikers makkelijk hun datacollectie stoppen/starten en meegeven welk apparaat gemeten wordt.
                     </Typography>
-                    <Button href={"https://github.com/Shambuwu/powerchainger-alg-service"}>
-                        Source code
-                    </Button>
                 </Grid>
-                <Grid item xs={5} marginTop={10}>
+                <Grid item xs={5}>
                     <Terminal name={"Powerchainger Data API"} height={"100px"}>
-                        <TerminalOutput>curl http://localhost:8000/test/</TerminalOutput>
-                        <TerminalOutput>This is the Data view!</TerminalOutput>
+                        <TerminalOutput>curl http://shambuwu.com:8000/data/stop_measurement/kevin</TerminalOutput>
+                        <TerminalOutput>curl http://shambuwu.com:8000/data/start_measurement/kevin/test</TerminalOutput>
                     </Terminal>
                 </Grid>
             </Grid>
-            <Button href={"/django"} sx={{ marginTop: "20px" }}>
-                Voor meer informatie, zie Django pagina
-            </Button>
         </>
     )
 }
 
-export default Python;
+export default CreativeWork;

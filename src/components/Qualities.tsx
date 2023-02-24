@@ -22,7 +22,7 @@ export default function Qualities() {
                         <Typography textAlign={"left"} width={"50%"} marginX={"auto"}>
                             <h3 style={{color: "#1b7662"}}>Kwalitatief Product Ontwikkelen</h3>
                             Er zijn meerdere beroepsproducten gerealiseerd voor het Powerchainger project. De student heeft voornamelijk gewerkt aan de "algorithm server". Deze is te vinden onder de sectie, Repositories.
-                            Documentatie over het vaststellen van kwaliteitscriteria is hier te vinden, maar ook op de <Link href={"http://shambuwu.com:3000/scrum"}>Scrumpagina</Link>.
+                            Documentatie over het vaststellen van kwaliteitscriteria is hier te vinden, maar ook op de <Link href={"/scrum"}>Scrumpagina</Link>.
                         </Typography>
                     </Link>
                 </Grid>
@@ -30,8 +30,8 @@ export default function Qualities() {
                     <Link href={"/creative_work"} style={{ textDecoration: 'none' }} color={"inherit"}>
                         <Typography textAlign={"left"} width={"50%"} marginX={"auto"}>
                             <h3 style={{color: "#1b7662"}}>Creatief Werken</h3>
-                            <span style={{color: "#1b7662"}}>Creatief werken</span>, dit criterium heb ik op verschillende manieren bewezen. Refereer naar "Wat heb ik geleerd?". Ik laat zien hoe ik verschillende programmeertalen, frameworks, tools, etc, gebruik tijdens
-                            de ontwikkeling van het project.
+                            De beroepsproducten waar de student aan heeft gewerkt waren constant aan het veranderen. Hierdoor kwamen verschillende problemen omhoog. Op deze pagina wordt beschreven hoe deze problemen getackled werden.
+                            De sectie geleerde/gebruikte vaardigheden beschrijft ook enkele manieren waarop de student creatief heeft gewerkt.
                         </Typography>
                     </Link>
                 </Grid>
@@ -41,8 +41,10 @@ export default function Qualities() {
                     <Link href={"/critical_judgement"} style={{ textDecoration: 'none' }} color={"inherit"}>
                         <Typography textAlign={"left"} width={"50%"} marginX={"auto"}>
                             <h3 style={{color: "#1b7662"}}>Kritisch Oordelen</h3>
-                            Ik heb altijd geprobeerd <span style={{color: "#1b7662"}}>Kritisch te oordelen</span>. Zo herinner ik mij een keer dat ik aangaf dat mijn projectgenoten niet genoeg deden voor het project. Dit staat ook gedocumenteerd in de meeting notulen.
-                            Klik hier voor een screenshot. Ook vroeg een projectgenoot continu beoordeling van zijn notulen, hier heb ik altijd eerlijk oordeel over gegeven.
+                            Kritisch oordelen verwijst naar het proces van zorgvuldige reflectie en evaluatie van informatie om een weloverwogen en onderbouwd standpunt te vormen.
+                            Het vereist een actieve en systematische aanpak om de geldigheid en betrouwbaarheid van bewijs en argumenten te onderzoeken,
+                            evenals een kritische houding om eventuele vooroordelen en onjuiste aannames te vermijden.
+                            Kritisch oordelen impliceert dus het vermogen om logisch en analytisch te denken en te redeneren, en om onafhankelijk te zijn in het evalueren van informatie.
                         </Typography>
                     </Link>
                 </Grid>
@@ -50,9 +52,10 @@ export default function Qualities() {
                     <Link href={"/cooperation"} style={{ textDecoration: 'none' }} color={"inherit"}>
                         <Typography textAlign={"left"} width={"50%"} marginX={"auto"}>
                             <h3 style={{color: "#1b7662"}}>Samenwerken</h3>
-                            <span style={{color: "#1b7662"}}>Samenwerken</span> ging... nogal lastig. Ik heb op technisch aspect niet echt het gevoel gehad dat ik veel op mijn projectgenoten kon rekenen. Wat er dus vaak gebeurde is dat zij een taak kregen,
-                            maar eigenlijk niet zo goed wisten hoe deze uitgevoerd moest worden. Hierdoor kwam deze taak uiteindelijk in mijn handen terecht. Dit is ook te zien in het aantal commits per persoon (hierboven), en het aantal tickets dat
-                            door mij is opgepakt.
+                            Samenwerking binnen een projectgroep is van essentieel belang voor het succes van het project.
+                            Het stelt de leden in staat om hun individuele sterke punten en vaardigheden te combineren en te benutten om gezamenlijk het doel van het project te bereiken.
+                            Bovendien kan samenwerking ervoor zorgen dat er meer creatieve oplossingen worden gegenereerd door de verschillende perspectieven en ideeën van de groepsleden samen te brengen.
+                            Door effectief te communiceren en te coördineren, kunnen de leden ook conflicten oplossen en vertragingen in het project voorkomen.
                         </Typography>
                     </Link>
                 </Grid>
@@ -62,9 +65,10 @@ export default function Qualities() {
                     <Link href={"/message_delivery"} style={{ textDecoration: 'none' }} color={"inherit"}>
                         <Typography textAlign={"left"} width={"50%"} marginX={"auto"}>
                             <h3 style={{color: "#1b7662"}}>Boodschap Overbrengen</h3>
-                            Op de <Link href={"http://shambuwu.com:3000/communication/"}>communicatiepagina</Link> staan voorbeelden van hoe ik mijn <span style={{color: "#1b7662"}}>Boodschappen overbracht</span>. Dit ging voornamelijk via Discord en WhatsApp,
-                            maar we hadden ook vaak "offline" meetings op school, waar we het project bespraken. Op de <Link href={"http://shambuwu.com:3000/scrum/"}>Scrumpagina</Link> staat ook een mooi voorbeeld hoe ik ervoor heb gezorgd dat we naar Jira zijn
-                            overgestapt.
+                            Het vermogen om een boodschap effectief over te brengen is een belangrijke kwaliteit, zowel in professionele als persoonlijke omgevingen.
+                            Het impliceert het vermogen om informatie duidelijk en beknopt te formuleren, rekening houdend met het publiek en hun achtergrond en belangen.
+                            Het gaat ook om het selecteren van de juiste communicatiemethode om de boodschap het best over te brengen, of het nu gaat om mondelinge communicatie, schrijven, visuals, of een combinatie van deze methoden.
+                            Een goede boodschapoverdracht vereist ook actief luisteren om feedback te krijgen en eventuele misverstanden op te helderen.
                         </Typography>
                     </Link>
                 </Grid>
@@ -72,8 +76,10 @@ export default function Qualities() {
                     <Link href={"/planning"} style={{ textDecoration: 'none' }} color={"inherit"}>
                         <Typography textAlign={"left"} width={"50%"} marginX={"auto"}>
                             <h3 style={{color: "#1b7662"}}>Plannen</h3>
-                            Het <span style={{color: "#1b7662"}}>Plannen</span> van taken ging voornamelijk via Jira. Elke twee weken hadden wij een Sprintplanning. Dit hield in dat wij met de hele groep gingen zitten, taken gingen bedenken en een tijdsduur
-                            aan deze taken gingen verbinden. Dit hebben wij gedaan met Scrumpoker. Voor meer details zie de <Link href={"http://shambuwu.com:3000/scrum/"}>Scrumpagina</Link>.
+                            Plannen is een belangrijke kwaliteit die verwijst naar het vermogen om vooruit te denken, doelen te stellen en acties te organiseren om die doelen te bereiken.
+                            Een goede planner houdt rekening met de beschikbare middelen, de tijd en de vereiste stappen om het gewenste resultaat te bereiken.
+                            Door een duidelijk plan te hebben, kan men de efficiëntie en effectiviteit van het werk maximaliseren, onnodige vertragingen en fouten vermijden, en de voortgang van het werk bijhouden.
+                            Het is ook belangrijk om flexibel te blijven en aanpassingen te maken aan het plan indien nodig, bijvoorbeeld wanneer onverwachte gebeurtenissen optreden of nieuwe informatie beschikbaar komt.
                         </Typography>
                     </Link>
                 </Grid>
@@ -83,9 +89,9 @@ export default function Qualities() {
                     <Link href={"/adaptability"} style={{ textDecoration: 'none' }} color={"inherit"}>
                         <Typography textAlign={"left"} width={"50%"} marginX={"auto"}>
                             <h3 style={{color: "#1b7662"}}>Aanpassingsvermogen</h3>
-                            Mijn <span style={{color: "#1b7662"}}>Aanpassingsvermogen</span> was vooral op technisch aspect merkbaar. We hebben bijvoorbeeld meerdere projectvisies gehad. De eerste versie van de Powerchainger API is iets van drie revisies ondergaan.
-                            Eerst was het een Django applicatie, vervolgens een Next.js applicatie (Oeps foutje van mij!) en de versie die nu op de main branch staat is een Express.js applicatie. Dit komt omdat we in het begin niet zo zeker waren van wat de applicatie
-                            nou daadwerkelijk moest gaan doen, waardoor we constant verschillende ideeën uitvoerden. Ik vond dit echter niet erg, ik vond het wel leuk om constant nieuwe dingen proberen werkend te krijgen in de Docker containers.
+                            Aanpassingsvermogen is een belangrijke kwaliteit die verwijst naar het vermogen om zich snel aan te passen aan veranderende omstandigheden en om flexibel te zijn in de aanpak van problemen.
+                            Het omvat het vermogen om snel te leren en nieuwe informatie te integreren, om te reageren op onverwachte gebeurtenissen en om creatieve oplossingen te vinden voor uitdagende situaties.
+                            Een persoon met een goed aanpassingsvermogen is in staat om zich snel aan te passen aan nieuwe situaties en om zich aan te passen aan verschillende mensen en omgevingen.
                         </Typography>
                     </Link>
                 </Grid>
@@ -93,7 +99,7 @@ export default function Qualities() {
                     <Link href={"proactive_acting"} style={{ textDecoration: 'none' }} color={"inherit"}>
                         <Typography textAlign={"left"} width={"50%"} marginX={"auto"}>
                             <h3 style={{color: "#1b7662"}}>Pro-actief Handelen</h3>
-                            <span style={{color: "#1b7662"}}>Pro-actief handelen</span> heb ik vooral bewezen met de <Link href={"http://shambuwu.com:3000/react/"}>front-end applicatie</Link>. Toen we nieuwe functionaliteit toegevoegd hadden aan de Data API, bestuurden
+                            <span style={{color: "#1b7662"}}>Pro-actief handelen</span> heb ik vooral bewezen met de <Link href={"/react"}>front-end applicatie</Link>. Toen we nieuwe functionaliteit toegevoegd hadden aan de Data API, bestuurden
                             we deze met cURL requests. Ik wist dat dit een bottleneck zou gaan vormen tijdens de ontwikkeling, dus besloot ik pro-actief een front-end applicatie te bouwen voor deze functionaliteit.
                         </Typography>
                     </Link>

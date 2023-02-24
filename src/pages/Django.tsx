@@ -44,7 +44,7 @@ function Django() {
                         Zo heb ik ook wat ervaring opgedaan met het opstellen van en CI pipeline.
                         De API staat online op het moment en is samen met de source code te bezoeken via de knoppen hieronder.
                     </Typography>
-                    <Button href={"http://shambuwu.com:8080/"}>
+                    <Button href={"http://shambuwu.com:8000/"}>
                         API
                     </Button>
                     <Button href={"https://github.com/Shambuwu/powerchainger-alg-server"}>
@@ -53,7 +53,7 @@ function Django() {
                 </Grid>
                 <Grid item xs={5}>
                     <Terminal name={"Powerchainger Data API"} height={"100px"}>
-                        <TerminalOutput>curl http://shambuwu.com:8080</TerminalOutput>
+                        <TerminalOutput>curl http://shambuwu.com:8000</TerminalOutput>
                         <TerminalOutput>Powerchainger algorithm API.</TerminalOutput>
                     </Terminal>
                     Deze command kunt u uitvoeren in uw terminal

@@ -23,6 +23,12 @@ import Scrum from "./pages/Scrum";
 import Communication from "./pages/Communication";
 import KnowledgeDevelopment from "./pages/KnowledgeDevelopment";
 import QualityProduct from "./pages/QualityProduct";
+import CreativeWork from "./pages/CreativeWork";
+import CriticalJudgement from "./pages/CriticalJudgement";
+import Cooperation from "./pages/Cooperation";
+import MessageDelivery from "./pages/MessageDelivery";
+import Planning from "./pages/Planning";
+import Adaptability from "./pages/Adaptability";
 
 const font = "'Space Mono', monospace"
 
@@ -67,6 +73,12 @@ function App() {
                         <Route path={"communication"} element={<Communication />} />
                         <Route path={"knowledge_development"} element={<KnowledgeDevelopment />} />
                         <Route path={"quality_product"} element={<QualityProduct />} />
+                        <Route path={"creative_work"} element={<CreativeWork />} />
+                        <Route path={"critical_judgement"} element={<CriticalJudgement />} />
+                        <Route path={"cooperation"} element={<Cooperation />} />
+                        <Route path={"message_delivery"} element={<MessageDelivery />} />
+                        <Route path={"planning"} element={<Planning />} />
+                        <Route path={"adaptability"} element={<Adaptability />} />
                     </Routes>
                 </BrowserRouter>
             </ThemeProvider>

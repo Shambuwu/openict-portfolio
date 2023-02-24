@@ -117,46 +117,55 @@ const skills = {
 
 export default function Skills(props) {
     const [autoPlay, setAutoPlay] = useState(true);
+    const [hidden, setHidden] = useState(true)
 
     return (
         <>
-            <Carousel
-                responsive={responsive}
-                autoPlay={autoPlay}
-                autoPlaySpeed={4000}
-                rewind={false}
-                rewindWithAnimation={false}
-                rtl={false}
-                shouldResetAutoplay
-                infinite={true}
-            >
-                {Object.values(skills).map(x => {
-                    return (
-                        <motion.div whileHover={{ scale: 0.95 }} transition={{ type: "spring", bounce: 0.5 }}>
+            {hidden ? (
+                <>
+                    <Typography style={{color: "red"}}>De onderdelen in deze sectie bevatten mogelijk informeel taalgebruik!</Typography>
+                    <Button onClick={() => setHidden(false)}>Laten zien</Button>
+                </>
+            ) : (
+                <>
+                    <Carousel
+                    responsive={responsive}
+                    autoPlay={autoPlay}
+                    autoPlaySpeed={4000}
+                    rewind={false}
+                    rewindWithAnimation={false}
+                    rtl={false}
+                    shouldResetAutoplay
+                    infinite={true}
+                    >
+                        {Object.values(skills).map(x => {
+                            return (
+                            <motion.div whileHover={{scale: 0.95}} transition={{type: "spring", bounce: 0.5}}>
                             <SkillCard imageName={x.imageName} image={x.image} text={x.text} buttonText={x.buttonText} title={x.title} href={x.href} />
-                        </motion.div>
-                    )
-                })}
-            </Carousel>
-            <div style={{marginTop: "20px"}}>
-                <motion.div
-                    whileTap={{ scale: 0.8 }}
-                >
-                    {autoPlay ? (
-                        <Button size="small" color="secondary" onClick={() => {
-                            setAutoPlay(false)
-                        }}>
-                            Stop Autoplay
-                        </Button>
+                            </motion.div>
+                            );
+                        })}
+                    </Carousel><div style={{marginTop: "20px"}}>
+                    <motion.div
+                    whileTap={{scale: 0.8}}
+                    >
+                {autoPlay ? (
+                    <Button size="small" color="secondary" onClick={() => {
+                    setAutoPlay(false);
+                }}>
+                    Stop Autoplay
+                    </Button>
                     ) : (
-                        <Button size="small" color="secondary" onClick={() => {
-                            setAutoPlay(true)
-                        }}>
-                            Start Autoplay
-                        </Button>
+                    <Button size="small" color="secondary" onClick={() => {
+                    setAutoPlay(true);
+                }}>
+                    Start Autoplay
+                    </Button>
                     )}
-                </motion.div>
-            </div>
+                    </motion.div>
+                    </div>
+                </>
+            )}
         </>
     )
 }
