@@ -139,6 +139,35 @@ function QualityProduct() {
                         />
                     </motion.div>
                 </Grid>
+                <Grid item xs={7} marginTop={"30px"}>
+                    <Typography
+                        sx={{marginTop: "50px"}}
+                        color={"secondary"}
+                        gutterBottom
+                        variant="h5"
+                        component={motion.div}
+                        animate={{ scale: [0.99, 1.00, 0.99] }}
+                        transition={{ duration: 2, repeat: Infinity }}
+                    >
+                        Codekwaliteit
+                    </Typography>
+                    <Typography variant="body1" color="inherit" align={"left"} sx={{width: "70%", marginLeft: "auto", marginRight: "auto"}}>
+                        Codekwaliteit vormt een essentieel onderdeel van softwareontwikkeling en verdient daarom de nodige aandacht.
+                        In deze specifieke context staat de consistentie van de code centraal.
+                        Het gebruik van verschillende standaarden door elkaar maakt de code minder leesbaar en geeft een onprofessionele indruk.
+                        De voorkeur gaat uit naar CamelCase, maar gezien het gebruik van snake_case in diverse Python-bibliotheken en door de meerderheid van Python-ontwikkelaars,
+                        is ervoor gekozen om de code aan te passen en uitsluitend snake_case te gebruiken. Deze kwaliteitseis is vastgelegd in de volgende Jira-ticket.
+                    </Typography>
+                </Grid>
+                <Grid item xs={5} marginTop={"30px"}>
+                    <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", bounce: 0.5 }}>
+                        <Box
+                            component={"img"}
+                            src={"https://cdn.discordapp.com/attachments/934486106123157524/1125419875666509886/image.png"}
+                            sx={{boxShadow: 3, borderRadius: 2, height: "80%", width: "100%"}}
+                        />
+                    </motion.div>
+                </Grid>
             </Grid>
         </>
     )

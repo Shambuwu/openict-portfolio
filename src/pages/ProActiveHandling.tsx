@@ -39,6 +39,13 @@ function ProActiveHandling() {
                         De student heeft zijn pro-actieve houding laten zien toen hij aan een frontend werkte voor een project.
                         Hij realiseerde zich dat het maken van curl requests om datacollectie te stoppen/starten tijdens het ontwikkelingsproces vertraging zou veroorzaken en de efficiëntie zou verminderen.
                         In plaats van te wachten tot het probleem zich voordeed, nam de student het initiatief om het probleem op te lossen voordat het zich zou voordoen.
+                        <br/>
+                        <br/>
+                        Door deze proactieve benadering kon de student mogelijke problemen voorkomen en het ontwikkelingsproces soepeler laten verlopen. Hij toonde zijn betrokkenheid bij het project door te streven naar efficiëntie en kwaliteit in de frontend-ontwikkeling.
+                        <br/>
+                        <br/>
+                        Kortom, de proactieve houding van de student bij de frontend illustreert zijn vermogen om problemen vroegtijdig te identificeren en aan te pakken. Zijn initiatief toont zijn toewijding aan het leveren van hoogwaardige frontend-oplossingen en zijn streven naar succes in het project.
+
                     </Typography>
                 </Grid>
                 <Grid item xs={5}>

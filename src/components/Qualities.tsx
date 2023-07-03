@@ -109,9 +109,16 @@ export default function Qualities() {
                 <Grid item xs={10} marginTop={"30px"} component={motion.div} whileHover={{ scale: 1.1 }}>
                     <Typography textAlign={"left"} width={"50%"} marginX={"auto"}>
                         <h3 style={{color: "#1b7662"}}>Reflecteren</h3>
-                        Achteraf had ik misschien meer leiderschap moeten tonen. Ik ben redelijk verlegen, dus ik vind het aanspreken van projectgenoten moeilijk.
-                        Hier moet ik wel aan gaan werken, gezien ik waarschijnlijk mijn hele leven langs in teamverband zal gaan werken. Verder ben ik
-                        erg tevreden met de vaardigheden die ik heb geleerd en de kennis die ik heb opgedaan.
+                        Achteraf gezien besef ik dat ik misschien meer leiderschap had moeten tonen tijdens het project. Als een persoon die van nature wat verlegen is, vond ik het moeilijk om mijn projectgenoten aan te spreken en initiatieven te nemen. Ik realiseer me echter dat dit een aspect is waar ik aan moet werken, aangezien ik hoogstwaarschijnlijk mijn hele professionele leven in teamverband zal werken. Het is belangrijk om mijn communicatieve vaardigheden te verbeteren en meer zelfvertrouwen te ontwikkelen bij het aangaan van interacties met mijn teamleden.
+                        <br/>
+                        <br/>
+                        Ondanks dit aspect van mijn persoonlijkheid ben ik zeer tevreden met de vaardigheden die ik tijdens het project heb verworven en de kennis die ik heb opgedaan. Het project heeft me in staat gesteld om mijn technische expertise op het gebied van fullstack-ontwikkeling verder te ontwikkelen en praktische ervaring op te doen. Ik ben trots op de manier waarop ik heb bijgedragen aan het project en de resultaten die we hebben bereikt als team.
+                        <br/>
+                        <br/>
+                        Daarnaast heb ik ook geleerd om te waarderen hoe belangrijk teamwork en samenwerking zijn in het bereiken van succesvolle projectresultaten. Ik heb gezien hoe de verschillende vaardigheden en perspectieven van mijn teamleden hebben bijgedragen aan het creëren van een sterke en goed functionerende samenwerkingsomgeving. Deze ervaring heeft me gemotiveerd om actief deel te nemen aan teamactiviteiten en bij te dragen aan een positieve en productieve teamdynamiek.
+                        <br/>
+                        <br/>
+                        Ik ben vastbesloten om mijn leiderschapsvaardigheden verder te ontwikkelen en mijn verlegenheid te overwinnen. Door mijn positieve ervaringen tijdens dit project ben ik gemotiveerd om uit mijn comfortzone te stappen en actiever betrokken te zijn bij toekomstige projecten. Ik zie dit als een waardevolle groeikans en ik ben optimistisch over mijn vermogen om mijn professionele ontwikkeling voort te zetten en succesvol te zijn in teamverband.
                     </Typography>
                 </Grid>
             </Grid>

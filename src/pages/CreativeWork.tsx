@@ -72,6 +72,33 @@ function CreativeWork() {
                         <TerminalOutput>curl http://shambuwu.com:8000/data/start_measurement/kevin/test</TerminalOutput>
                     </Terminal>
                 </Grid>
+                <Grid item xs={7}>
+                    <Typography
+                        sx={{marginTop: "50px"}}
+                        color={"secondary"}
+                        gutterBottom
+                        variant="h5"
+                        component={motion.div}
+                        animate={{ scale: [0.99, 1.00, 0.99] }}
+                        transition={{ duration: 2, repeat: Infinity }}
+                    >
+                        Infrastructuur
+                    </Typography>
+                    <Typography variant="body1" color="inherit" align={"left"} sx={{width: "70%", marginLeft: "auto", marginRight: "auto"}}>
+                        Om een beter beeld te krijgen van het beoogde product aan het begin van het project, is een stroomdiagram opgesteld. Op deze manier is een infrastructuurontwerp gecreëerd dat effectief kon worden besproken met medegroepsleden en de projecteigenaar. Zodra de infrastructuur werd geïmplementeerd en er zich problemen voordeden die een alternatieve infrastructuur vereisten, werd het stroomdiagram aangepast, waardoor we als projectgroep iteratief konden ontwikkelen. Helaas zijn niet alle iteraties optimaal gedocumenteerd, waardoor enkele versies ontbreken.
+
+                        Er is bewust gekozen voor een iteratieve aanpak, omdat dit de mogelijkheid bood om voortdurend te evalueren, aan te passen en te verbeteren gedurende het project. Bovendien gaf het de projectgroep de gelegenheid om regelmatig feedback te geven en actief bij te dragen aan de ontwikkeling van de infrastructuur. Door iteratief te werken, kon er snel worden ingespeeld op veranderende eisen en wensen, en ervoor worden gezorgd dat het project voldeed aan de verwachtingen van zowel de projecteigenaar als de groepsgenoten.
+                    </Typography>
+                </Grid>
+                <Grid item xs={5} marginTop={"30px"}>
+                    <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", bounce: 0.5 }}>
+                        <Box
+                            component={"img"}
+                            src={"https://cdn.discordapp.com/attachments/934486106123157524/1125422160354226256/image.png"}
+                            sx={{boxShadow: 3, borderRadius: 2, height: "80%", width: "100%"}}
+                        />
+                    </motion.div>
+                </Grid>
             </Grid>
         </>
     )
